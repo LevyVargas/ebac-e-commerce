@@ -1,0 +1,189 @@
+.products .products__title {
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.products .products__img {
+  width: 200px;
+  margin-bottom: 15px;
+}
+
+.products .products__text {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.products .products__no {
+  opacity: 0.4;
+  text-decoration: line-through;
+}
+
+body {
+  width: 100%;
+  font-size: 15px;
+  font-weight: 300;
+  color: #1d1d1d;
+  font-family: "Lexend", Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px 50px;
+  background-color: #333;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .header__icons {
+  width: 35px;
+  cursor: pointer;
+  display: inline-block;
+}
+.header .header__icon--secondary {
+  opacity: 0.5;
+}
+.header .header__img {
+  width: 100%;
+}
+.header .header__logo {
+  width: 80px;
+}
+
+.banner {
+  width: 100%;
+  padding: 60px 0;
+  text-align: center;
+  background-image: url("https://brand.assets.adidas.com/image/upload/f_auto,q_auto:best,fl_lossy/if_w_gt_1920,w_1920/lam_fw24_sportswear_adi_essentials_21169_mh_dual_d_554c4b4201.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  background-position-y: 7%;
+}
+.banner .banner__title {
+  width: 100%;
+  font-size: 30px;
+  font-weight: 600;
+  margin: 10px;
+}
+.banner .banner__text {
+  width: 100%;
+  margin: 0 auto;
+  font-size: 25px;
+  opacity: 0.7;
+}
+
+.products {
+  width: 80%;
+  padding: 20px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.products .products__art {
+  cursor: pointer;
+  text-align: center;
+}
+.cart {
+  width: 500px;
+  padding: 25px;
+  background-color: #fff;
+  box-sizing: border-box;
+  height: 100%;
+  position: fixed;
+  right: -110%;
+  top: 100px;
+  box-shadow: -19px -1px 22px -15px rgba(0, 0, 0, 0.3);
+}
+.cart .cart__title {
+  width: 100%;
+  padding: 25px 0;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  box-sizing: border-box;
+}
+.cart .cart__shopping {
+  display: flex;
+  box-sizing: border-box;
+  border-bottom: 1px solid #333;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+.cart .cart__img {
+  width: 60px;
+}
+.cart .cart div p:nth-child(3) {
+  font-weight: 500;
+}
+.cart .cart__delete-icon {
+  cursor: pointer;
+}
+
+@media (max-width: 820px) {
+  header {
+    padding: 15px;
+  }
+  header img {
+    width: 60px;
+  }
+  header .header__icons {
+    width: 30px;
+  }
+  header .products {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  header .products__img {
+    width: 150px;
+  }
+  header .cart {
+    width: 400px;
+    top: 80px;
+  }
+}
+@media (max-width: 480px) {
+  .banner {
+    padding: 30px 0;
+  }
+  .banner .banner__title {
+    font-size: 18px;
+  }
+  .banner .banner__text {
+    font-size: 16px;
+  }
+  .products {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+  .products .products__img {
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 10px;
+  }
+  .products .products__title,
+  .products .products__text {
+    padding: 0 10px;
+    margin: 0;
+  }
+  .cart {
+    width: 100%;
+    box-shadow: none;
+  }
+  .cart .cart__title {
+    padding: 15px 0;
+  }
+  .cart .cart__shopping {
+    flex-direction: column;
+    align-items: center;
+  }
+  .cart .cart__img {
+    width: 100px;
+  }
+  .cart .cart__text {
+    margin: 0;
+  }
+}/*# sourceMappingURL=style.css.map */
