@@ -78,7 +78,11 @@ body {
 
 }
 
-.banner{
+main {
+    background-color: rgb(255, 255, 255)
+}
+
+.banner {
     @include container($fullWidth, 80px 0);
     text-align: center;
     background-image: url("https://brand.assets.adidas.com/image/upload/f_auto,q_auto:best,fl_lossy/if_w_gt_1920,w_1920/lam_fw24_sportswear_adi_essentials_21169_mh_dual_d_554c4b4201.jpg");
