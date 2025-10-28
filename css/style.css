@@ -95,7 +95,7 @@ main {
 
 .banner {
   width: 100%;
-  padding: 80px 0;
+  padding: 100px 0;
   text-align: center;
   background-image: url("https://brand.assets.adidas.com/image/upload/f_auto,q_auto:best,fl_lossy/if_w_gt_1920,w_1920/lam_fw24_sportswear_adi_essentials_21169_mh_dual_d_554c4b4201.jpg");
   background-repeat: no-repeat;
@@ -203,12 +203,13 @@ main {
   padding: 25px;
   background-color: #fff;
   box-sizing: border-box;
-  height: 100%;
+  height: 89.5%;
   position: fixed;
   left: -110%;
   top: 10.5%;
   box-shadow: -19px -1px 22px -15px rgba(0, 0, 0, 0.3);
   transition: all 0.25s ease;
+  overflow-y: auto;
 }
 .menu.show {
   left: 0%;
@@ -277,7 +278,7 @@ main {
 }
 @media (max-width: 480px) {
   .banner {
-    padding: 30px 0;
+    padding: 75px 0;
   }
   .banner .banner__title {
     font-size: 18px;
@@ -315,6 +316,10 @@ main {
   }
   .cart .cart__text {
     margin: 0;
+  }
+  .menu {
+    left: -150%;
+    width: 100%;
   }
 }
 .red {

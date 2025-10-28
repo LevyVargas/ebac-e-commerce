@@ -182,3 +182,9 @@ function countCartItems() {
 
 countCartItems();
 
+const elemButton = document.querySelector(".cart__button")
+elemButton.addEventListener("click", function(){
+    elemButton.classList.toggle("toggle");
+    elemButton.style.backgroundColor = "gray";
+    elemButton.innerText = "Listo";
+})
