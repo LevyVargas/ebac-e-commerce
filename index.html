@@ -3,17 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/functions.js" defer async></script>
     <title>Tienda adidas</title>
 </head>
 <body>
     <header class="header">
-        <i class="header__icons"><img class="header__img" src="img/menu.svg" alt="Icono menu"></i>
+        <i class="header__icons"><img class="header__img" src="img/menu2.svg" alt="Icono menu"></i>
         <img class="header__logo" src="img/adidas2.png" alt="Logo adidas">
-        <i class="header__icons header__icon--secondary"><img class="header__img" src="img/shopping-cart.svg" alt="Icono carrito"></i>
+        <div class="header__cart__container">
+            <div class="header__cart__badge"></div>
+        <div class="header__cart__icon">
+            <i class="header__icons header__icon--secondary"><img class="header__img" src="img/shopping-cart2.svg" alt="Icono carrito"></i>
+        </div>
+        </div>
     </header>
     <main>
         <section class="banner">
@@ -23,72 +30,123 @@
         <section class="products">
             <article class="products__art products__no">
                 <img class="products__img" src="img/jersey adidas.jpg" alt="Jersey de Mexico">
-                <h3 class="products__title">Jersey México 2023</h3>
+                <h3 class="products__title" id="txt">Jersey México 2023</h3>
                 <p class="products__text">$5,000.00</p>
+                <img class="products__icon" src="img/carrito.png" alt="Agregar al carrito">
             </article>
 
             <article class="products__art">
                 <img class="products__img" src="https://m.media-amazon.com/images/I/81Tom97BRhL._AC_SX522_.jpg" alt="Chamarra Adidas de Hombre">
                 <h3 class="products__title">Chamarra Adidas Spezial 6</h3>
                 <p class="products__text">$2,000.00</p>
+                <img src="img/carrito.png" alt="Agregar al carrito" class="products__icon">
             </article>
 
             <article class="products__art">
                 <img class="products__img" src="https://down-id.img.susercontent.com/file/id-11134207-7r98v-llkwiopivuamdf" alt="Tenis Adidas">
                 <h3 class="products__title">Adidas LG2</h3>
                 <p class="products__text">$2,300.00</p>
+                <img src="img/carrito.png" alt="Agregar al carrito" class="products__icon">
             </article>
 
             <article class="products__art">
                 <img class="products__img" src="img/jersey adidas.jpg" alt="Jersey de Mexico">
                 <h3 class="products__title">Jersey México 2023</h3>
                 <p class="products__text">$1,000.00</p>
+                <img src="img/carrito.png" alt="Agregar al carrito" class="products__icon">
             </article>
 
             <article class="products__art">
                 <img class="products__img" src="https://m.media-amazon.com/images/I/81Tom97BRhL._AC_SX522_.jpg" alt="Chamarra Adidas de Hombre">
                 <h3 class="products__title">Chamarra Adidas Spezial</h3>
                 <p class="products__text">$2,000.00</p>
+                <img src="img/carrito.png" alt="Agregar al carrito" class="products__icon">
             </article>
 
             <article class="products__art">
                 <img class="products__img" src="https://down-id.img.susercontent.com/file/id-11134207-7r98v-llkwiopivuamdf" alt="Tenis Adidas">
                 <h3 class="products__title">Adidas LG2</h3>
                 <p class="products__text">$2,300.00</p>
+                <img src="img/carrito.png" alt="Agregar al carrito" class="products__icon">
             </article>
 
             <article class="products__art">
                 <img class="products__img" src="img/jersey adidas.jpg" alt="Jersey de Mexico">
                 <h3 class="products__title">Jersey México 2023</h3>
                 <p class="products__text">$1,000.00</p>
+                <img src="img/carrito.png" alt="Agregar al carrito" class="products__icon">
             </article>
 
             <article class="products__art products__no">
                 <img class="products__img" src="https://m.media-amazon.com/images/I/81Tom97BRhL._AC_SX522_.jpg" alt="Chamarra Adidas de Hombre">
                 <h3 class="products__title">Chamarra Adidas Spezial</h3>
                 <p class="products__text">$2,000.00</p>
+                <img src="img/carrito.png" alt="Agregar al carrito" class="products__icon">
             </article>
 
             <article class="products__art">
                 <img class="products__img" src="https://down-id.img.susercontent.com/file/id-11134207-7r98v-llkwiopivuamdf" alt="Tenis Adidas">
                 <h3 class="products__title">Adidas LG2</h3>
                 <p class="products__text">$2,300.00</p>
+                <img src="img/carrito.png" alt="Agregar al carrito" class="products__icon">
             </article>
 
             <article class="products__art">
                 <img class="products__img" src="img/Tenis_Superstar_Negro_EG4959_01_00_standard.avif" alt="Tenis Adidas">
                 <h3 class="products__title">Tenis Superstar Negro</h3>
                 <p class="products__text">$2,500.00</p>
+                <img src="img/carrito.png" alt="Agregar al carrito" class="products__icon">
             </article>
             
         </section>
         <section class="cart">
             <h2 class="cart__title">CARRITO</h2>
             <div class="cart__shopping">
-                <img class="cart__img" src="img/adidas LG2.jpg" alt="">
+                <img class="cart__img" src="img/adidas LG2.jpg" alt="adidas LG2">
                 <p class="cart__text">Tenis</p>
                 <p class="cart__text">$ 2,800</p>
                 <img src="img/borrar.png" alt="" class="cart__delete-icon">
+            </div>
+            <div class="cart__shopping">
+                <img class="cart__img" src="https://i5.walmartimages.com/asr/82b8c33e-400d-4341-8ceb-411990fb5ebd.726f2f3e851ce4f0f384fd8ca052a3ed.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF" alt="adidas LG2">
+                <p class="cart__text">Tenis</p>
+                <p class="cart__text">$ 3,000</p>
+                <img src="img/borrar.png" alt="" class="cart__delete-icon">
+            </div>
+            <button class="cart__button">Comprar</button>
+        </section>
+        <section class="menu">
+            <div class="menu__closed">
+                <img src="img/x-circle.svg" alt="" class="menu__icons--closed">
+            </div>
+            <h2 class="menu__title">MENU</h2>
+            <div class="menu__shopping">
+                <p class="menu__text">CALZADO</p>
+                <img src="img/sneakers.png" alt="" class="menu__icons">
+            </div>
+                <div class="menu__shopping">
+                <p class="menu__text">MUJER</p>
+                <img src="img/woman.png" alt="" class="menu__icons">
+            </div>
+            <div class="menu__shopping">
+                <p class="menu__text">HOMBRE</p>
+                <img src="img/men.png" alt="" class="menu__icons">
+            </div>
+            <div class="menu__shopping">
+                <p class="menu__text">NIÑOS</p>
+                <img src="img/kids.png" alt="" class="menu__icons">
+            </div>
+            <div class="menu__shopping">
+                <p class="menu__text">DEPORTE</p>
+                <img src="img/sports2.png" alt="" class="menu__icons">
+            </div>
+            <div class="menu__shopping">
+                <p class="menu__text">OUTLET</p>
+                <img src="img/outlet.png" alt="" class="menu__icons">
+            </div>
+            <div class="menu__shopping">
+                <p class="menu__text">MUNDO ADIDAS</p>
+                <img src="img/adidas-icono.png" alt="" class="menu__icons">
             </div>
         </section>
     </main>
